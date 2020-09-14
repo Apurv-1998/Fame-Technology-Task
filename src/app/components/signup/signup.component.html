@@ -1,0 +1,20 @@
+<hr/>
+
+<form [formGroup] = "signupForm" (ngSubmit) = "onSubmit()" class="login">
+    <div>FirstName:</div>
+    <input formControlName = "firstName" type = "text"><br/>
+    <div>LastName:</div>
+    <input formControlName = "lastName" type = "text"><br/>
+    <div>Email:</div>
+    <input formControlName = "email" type = "text"><br/>
+    <div>Password:</div>
+    <input formControlName = "password" type = "password"><br/>
+    <div>Date Of Birth:</div>
+    <input formControlName = "dob" type = "date"><br/><br/><br/>
+
+    <button class="primary-button"> Signup </button>
+
+</form><br/><br/>
+<div class="discard">
+    <button (click) = "discard()"> Discard </button>
+</div>

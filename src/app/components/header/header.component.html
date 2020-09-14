@@ -1,0 +1,11 @@
+<div style='min-height: 50px;'>
+    <div *ngIf = "!checkLocalStorage()" style="float: right;">
+        <button class="primary-button" (click) = "signup()"> Sign Up </button>
+        <button class="second-primary-button" (click) = "login()"> Login </button>
+    </div>
+
+    <div style="float: right;" *ngIf = "checkLocalStorage()">
+        <button class="secondary-button" (click) = "logout()">Logout</button>
+    </div>
+
+</div>

@@ -1,0 +1,13 @@
+.hover span {
+    display: none;
+}
+
+.hover:hover span {
+    display: inline-block;
+}
+
+.details, .image {
+    display: block;
+    float: left;
+    width: 45vw;
+}

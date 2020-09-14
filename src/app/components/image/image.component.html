@@ -1,0 +1,10 @@
+<div>
+    <div *ngIf = "retrievedImage">
+            <img class = "image" [src] = "retrievedImage">
+
+    </div><hr/>
+    <div>
+        <button (click) = "deleteImage(imageId,userId)" class="secondary-button">Delete Image</button>
+        <button (click) = "updateImage(userId)" class="primary-button">Update image</button>
+    </div>
+</div>

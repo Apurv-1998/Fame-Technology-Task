@@ -1,0 +1,24 @@
+<hr/>
+
+<div class = "col-md-12">
+
+        <b><u>UserName : {{response.userName}}</u></b><i>(Created: {{response.duration}})</i><hr/>
+
+        <div class = "details">
+            <i>Date Of Birth -> {{response.dob| date: "fullDate" }}</i><br/>
+            <i>Email Id -> {{response.email}}</i><br/>
+            <i  class = "hover">User Id -> <span >{{response.userId}}</span></i><br/><br/>
+        </div>
+
+
+        <div class = "image">
+            <app-image [receivedImageId] = "response.imageId" [receivedUserId] = "response.userId"></app-image><br/><br/><hr/>
+        </div>
+
+        <div style="position: fixed; bottom: 0px;">
+
+            <small><i>Last Updated: <b>{{response.updatedTime}}</b></i></small>
+        </div>
+
+
+</div>

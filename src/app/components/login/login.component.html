@@ -1,0 +1,23 @@
+<hr/>
+
+<div class = "col-md-12">
+    <div class = "col-md-6" *ngIf = "!isVerified">
+        <p>Activate Your Account By Checking Your Email</p>
+    </div>
+
+    <div *ngIf = "isVerified">
+
+        <form [formGroup] = "loginForm" (ngSubmit) = "onSubmit()" class="login">
+
+            Email:
+            <input formControlName = "email" type = "text"><br/>
+            Password:
+            <input formControlName = "password" type = "password"><br/><br/>
+
+            <button class="primary-button">Login</button>
+
+        </form>
+
+    </div>
+
+</div>
